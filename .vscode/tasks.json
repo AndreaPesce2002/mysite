@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Avvia Django",
+            "type": "shell",
+            "command": "python backend/manage.py runserver",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Avvia NPM",
+            "type": "shell",
+            "command": "npm run dev",
+            "options": {
+                "cwd": "${workspaceFolder}/frontend"
+            },
+            "group": "build",
+            "presentation": {
+                "panel": "new"
+            }
+        }
+    ]
+}
